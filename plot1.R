@@ -1,5 +1,5 @@
 #Loading data
-pcb <- read.table("./data/household_power_consumption.txt", head=TRUE, sep =";", na.string="?", colClasses=c("character", "character", "numeric", "numeric", "numeric", "numeric", "numeric", "numeric", "numeric"))
+pcb <- read.table("../data/household_power_consumption.txt", head=TRUE, sep =";", na.string="?", colClasses=c("character", "character", "numeric", "numeric", "numeric", "numeric", "numeric", "numeric", "numeric"))
 #Subsetting
 pcb <- subset(pcb, Date=="1/2/2007"| Date=="2/2/2007")
 gp <- pcb$Global_active_power
